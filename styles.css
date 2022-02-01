@@ -1,0 +1,137 @@
+* {
+    box-sizing: border-box;
+}
+
+html, body, div, img {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+    font-family: "Archivo Black";
+}
+
+body {
+    line-height: 1;
+}
+
+
+#nav-bar {
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 5px;
+    justify-content: space-evenly;
+    flex-direction: row;
+
+}
+
+.item { 
+    margin: 5px 0 5px 5px;
+
+}
+
+#about {
+    letter-spacing: 0.1em;
+    word-spacing: 3px;
+}
+
+nav ul {
+    list-style-type: none;
+    background-color: hsl(213, 95%, 50%);
+    overflow: hidden;
+    top: 0;
+    position: fixed;
+    z-index: 9999;
+}
+
+nav ul li {
+    display: inline;
+    float: left;
+}
+
+nav ul li a {
+
+        display: block;
+        color: rgb(0,0,0);
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+        font-weight: bold;
+      
+}
+
+nav ul li a:hover {
+    color: white;
+    background-color: gray;
+}
+
+#contact {
+    text-align: center;
+    background-color: gray;
+    padding: 20px 0 20px 0;
+}
+
+#header-img {
+    width: 100%;
+    height: 100%;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+article {
+    background-color: gray;
+    border-top: 2px black solid;
+    border-bottom: 2px black solid;
+    padding-left: 2rem;
+    padding-right: 2rem;
+}
+
+#email {
+    width: 35%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+  
+}
+input[type=submit] {
+
+background-color: hsl(213, 95%, 50%);
+border: 1px solid black;
+color: white;
+padding: 16px 32px;
+text-decoration: none;
+margin: 4px 2px;
+cursor: pointer;
+}
+
+@media(max-width: 768px) {
+   #header-img {
+       margin-top: 6rem;
+   }
+
+   * {
+       margin: 0px;
+       padding: 0px;
+       box-sizing: border-box;
+   }
+
+   .menu {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .container img {
+    max-width: 100%;
+  }
+}
