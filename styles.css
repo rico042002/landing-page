@@ -39,8 +39,13 @@ body {
 }
 
 #about {
-    letter-spacing: 0.1em;
+    letter-spacing: normal;
     word-spacing: 3px;
+    padding: 10px 0 5px 0;
+}
+
+h1 {
+    padding-top: 30px;
 }
 
 nav ul {
